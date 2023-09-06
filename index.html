@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/article.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <title>Zadanie domowe z lekcji nr 4 - parę słów o kosmosie (z wykorzystaniem normalize.css i BEM)</title>
+</head>
+
+<body class="body">
+    <div class="container">
+
+        <header id="top">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a class="navigation__link" href="#oKosmosie"
+                            title="Parę słów o kosmosie">Parę słów o
+                            kosmosie</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#tabelaPlanety"
+                            title="Tabela przedstawiająca planetarne dane">Tabela przedstawiająca
+                            planetarne dane</a>
+                    </li>
+                    <li class="navigation__item"><a class="navigation__link" href="#oPlanetach"
+                            title="Jeszcze o planetach">Jeszcze o planetach</a>
+                    </li>
+                    <li class="navigation__item"><a class="navigation__link" href="#dodatkoweInformacje"
+                            title="Dodatkowe informacje">Dodatkowe
+                            informacje</a></li>
+                    <li class="navigation__item"><a target="_blank" class="navigation__link navigation__link--highlited"
+                            href="https://pl.wikipedia.org/wiki/Wszech%C5%9Bwiat" title="Kosmos w Wikipedii">Kosmos w
+                            Wikipedii (uwaga: strona otworzy się w nowym oknie)</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="oKosmosie">
+                <article class="article">
+                    <h1 class="article__mainHeader">Co to jest Kosmos?</h1>
+                    <div class="article__buttonBox">
+                        <button class="button buttonBackground ">Zmień tło strony na <span
+                                class="bodyBackground">czarne</span></button>
+
+                    </div>
+                    <p><strong>Kosmos jest nieskończonym obszarem, który fascynuje ludzkość od wieków. To przestrzeń
+                            pełna
+                            tajemnic,gwiazd, planet, i galaktyk, które kryją w sobie niezliczone zagadki.</strong>
+                        Obserwując nocne niebo,
+                        można dostrzec olbrzymie gwiazdy na tle ciemnej nieskończoności kosmicznej przestrzeni. Badania
+                        prowadzone przez astronomów dostarczają nam nieustannie nowych odkryć, pozwalając nam lepiej
+                        zrozumieć
+                        naszą pozycję w ogromnym wszechświecie.
+                    </p>
+                </article>
+            </section>
+
+            <section id="tabelaPlanety">
+                <article class="article article--table">
+                    <h2 class="article__subHeader">Tabela przedstawiająca planetarne dane</h2>
+
+                    <table class="table">
+                        <caption class="table__caption">* Dane pochodzą z serwisu Wikipedia</caption>
+                        <thead>
+                            <tr class="table__tableRow">
+                                <th class="table__tableCell table__tableHeader" scope="col">Planeta</th>
+                                <th class="table__tableCell table__tableHeader" scope="col">Średnica (km)</th>
+                                <th class="table__tableCell table__tableHeader" scope="col">Masa (kg)</th>
+                                <th class="table__tableCell table__tableHeader" scope="col">Odległość od Słońca
+                                    (km)
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table__tableRow">
+                                <th class="table__tableCell table__tableHeader" scope="row">Merkury</th>
+                                <td class="table__tableCell">4 879</td>
+                                <td class="table__tableCell">3,30 x 10^23</td>
+                                <td class="table__tableCell">57 910 000</td>
+                            </tr>
+                            <tr class="table__tableRow">
+                                <th class="table__tableCell table__tableHeader" scope="row">Wenus</th>
+                                <td class="table__tableCell">12 104</td>
+                                <td class="table__tableCell">4,87 x 10^24</td>
+                                <td class="table__tableCell">108 200 000</td>
+                            </tr>
+                            <tr class="table__tableRow">
+                                <th class="table__tableCell table__tableHeader" scope="row">Ziemia</th>
+                                <td class="table__tableCell">12 742</td>
+                                <td class="table__tableCell">5,97 x 10^24</td>
+                                <td class="table__tableCell">149 600 000</td>
+                            </tr>
+                            <tr class="table__tableRow">
+                                <th class="table__tableCell table__tableHeader" scope="row">Mars</th>
+                                <td class="table__tableCell">6 779</td>
+                                <td class="table__tableCell">6,42 x 10^23</td>
+                                <td class="table__tableCell">227 940 000</td>
+                            </tr>
+                            <tr class="table__tableRow">
+                                <th class="table__tableCell table__tableHeader" scope="row">Jowisz</th>
+                                <td class="table__tableCell">139 820</td>
+                                <td class="table__tableCell">1,90 x 10^27</td>
+                                <td class="table__tableCell">778 330 000</td>
+                            </tr>
+                            <tr class="table__tableRow">
+                                <th class="table__tableCell table__tableHeader" scope="row">Saturn</th>
+                                <td class="table__tableCell">116 460</td>
+                                <td class="table__tableCell">5,68 x 10^26</td>
+                                <td class="table__tableCell">1 424 600 000</td>
+                            </tr>
+                            <tr class="table__tableRow">
+                                <th class="table__tableCell table__tableHeader" scope="row">Uran</th>
+                                <td class="table__tableCell">50 724</td>
+                                <td class="table__tableCell">8,68 x 10^25</td>
+                                <td class="table__tableCell">2 873 550 000</td>
+                            </tr>
+                            <tr class="table__tableRow">
+                                <th class="table__tableCell table__tableHeader" scope="row">Neptun</th>
+                                <td class="table__tableCell">49 244</td>
+                                <td class="table__tableCell">1,02 x 10^26</td>
+                                <td class="table__tableCell">4 501 000 000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </article>
+            </section>
+
+            <section id="oPlanetach">
+                <article class="article">
+                    <h2 class="article__subHeader">Jeszcze o planetach</h2>
+                    <p>
+                        Zauważ, że każda planeta ma unikalne cechy, takie jak średnica, masa oraz odległość od Słońca.
+                        Planety różnią się między sobą, tworząc razem niezwykle różnorodny układ planetarny.
+
+                    </p>
+                    <p>
+                        <em>Świat astronomii jest nieustannie rozwijający się, i każde odkrycie przynosi nam nowe
+                            spojrzenie
+                            na
+                            kosmos.</em>
+                    </p>
+                </article>
+            </section>
+            <section id="dodatkoweInformacje">
+                <article class="article">
+                    <h2 class="article__subHeader article__subHeader--highlighted">Dodatkowe informacje</h2>
+                    <p>
+                        Kosmos to także miejsce, gdzie powstają niezwykłe zjawiska, takie jak supernowe, czarne dziury
+                        czy
+                        pulsary. Te wyjątkowe i ekstremalne zdarzenia odmieniają struktury galaktyk i wpływają na
+                        kształtowanie całych układów kosmicznych.
+                    </p>
+                    <p>Jednym z najbardziej tajemniczych aspektów kosmosu jest jego ciemna materia oraz ciemna energia,
+                        której obecność stanowi ponad 95% całkowitej zawartości wszechświata. Pomimo wielu badań,
+                        naukowcy
+                        wciąż nie rozumieją w pełni istoty tych fenomenów i poszukują odpowiedzi na pytania związane z
+                        ich
+                        naturą i wpływem na dalszy los kosmosu.
+                    </p>
+                    <p>Przemierzenie odległych zakątków kosmosu staje się coraz bardziej realne dzięki osiągnięciom w
+                        dziedzinie astronautyki. Wysłanie sond i teleskopów kosmicznych w głąb wszechświata pozwala na
+                        obserwację odległych galaktyk, gwiazd oraz planet, a także na poszukiwanie oznak życia na innych
+                        obiektach kosmicznych.</p>
+                    <p><strong>
+                            Kosmos wciąż kryje wiele zagadek, a nasza eksploracja i badania tego fascynującego obszaru
+                            nigdy
+                            się
+                            nie zatrzymują. To wielkie wyzwanie, które stawia przed nami ludzkość, a odkrycia i
+                            zrozumienie
+                            kosmosu pozostają jednymi z najważniejszych celów dla przyszłych pokoleń naukowców i
+                            badaczy.
+                        </strong>
+                    </p>
+                </article>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <p>© 2023 Frontend Developer od podstaw | Moduł 04</p>
+            <div class="footer__footerSeparator"></div>
+            <p><a class="footer__toTop" href="#top">↑ na górę strony</a></p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
