@@ -1,12 +1,11 @@
 
-let buttonBackground = document.querySelector(".buttonBackground");
-let bodyBackground = document.querySelector(".bodyBackground");
+const buttonBackgroundElement = document.querySelector(".js-buttonBackground");
+const bodyBackgroundElement = document.querySelector(".js-bodyBackground");
+const bodyElement = document.querySelector(".js-body");
 
-let body = document.querySelector(".body");
-
-buttonBackground.addEventListener("click", () => {
-    body.classList.toggle("body--changeBackground");
-    bodyBackground.innerText = body.classList.contains("body--changeBackground") ? "kosmiczny" : "czarny";
+buttonBackgroundElement.addEventListener("click", () => {
+    bodyElement.classList.toggle("body--changeBackground");
+    bodyBackgroundElement.innerText = bodyElement.classList.contains("body--changeBackground") ? "kosmiczny" : "czarny";
 });
 
 

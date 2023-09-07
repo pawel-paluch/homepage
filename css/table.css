@@ -14,28 +14,28 @@
 }
 
 
-.table__tableCell {
+.table__cell {
   padding: 10px 20px;
   text-align: left;
   border: 1px solid #ededed;
   vertical-align: middle;
 }
 
-.table__tableHeader {
+.table__cell--header {
   color: #fff;
   background-color: #1b398d;
   font-weight: 600;
 }
 
-.table__tableRow:nth-child(even) {
+.table__row:nth-child(even) {
   background-color: #f7f7f7;
 }
 
-.table__tableRow:nth-child(odd) {
+.table__row:nth-child(odd) {
   background-color: #fff;
 }
 
-.table__tableRow:hover {
+.table__row:hover {
   background-color: #000;
   color: #fff;
 }
