@@ -28,7 +28,6 @@
   padding: 20px;
   margin: 50px 0;
   background-color: #fff;
-  border-radius: 20px;
   overflow-x: auto;
   box-shadow: #ededed 0 0 40px;
 }
@@ -36,8 +35,8 @@
 .article__buttonBox {
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
-  padding: 10px;
+  padding: 20px;
   text-align: right;
   box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, 0.05);
-  border-radius: 20px;
+
 }

@@ -13,7 +13,7 @@ html {
   font-size: 16px;
   line-height: 1.6;
   color: #2a2a2a;
-  background-image: url("https://pixelvision.pl/dev/background-cosmos.jpg");
+  background-image: url("../img/background-cosmos.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -27,7 +27,6 @@ html {
   padding: 35px;
   box-shadow: 0px 5px 50px 5px rgba(225, 0, 0, 0.5),
     0px -5px 50px 5px rgba(0, 125, 255, 0.6);
-  border-radius: 25px;
   background-color: #f7f7f7;
 }
 
@@ -43,7 +42,6 @@ html {
   text-transform: uppercase;
   border: 0;
   padding: 15px;
-  border-radius: 15px;
   cursor: pointer;
 }
 
