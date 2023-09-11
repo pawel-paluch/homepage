@@ -14,4 +14,4 @@
 ![alt text for screen readers](img/Screen.jpg "Homepage")
 
 ## Demo
-[Zobacz demo](https://pawel-paluch.github.io/homepage/).
+[See the project](https://pawel-paluch.github.io/homepage/).
